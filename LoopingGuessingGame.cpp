@@ -1,11 +1,12 @@
 #include <iostream> 
 #include <cstdlib> 
+#include<ctime>
 using namespace std;
 
 int main()
 {
    srand(time(0)); // srand() sets the seed which is used by rand to generate “random” numbers.
-   int rnd = rand() % (100 + 1); 
+   int rnd = rand() % (100 + 1);
    int gss, count = 0;
    cout << "Guess a number betweeen 1-100 : ";
    cin >> gss;

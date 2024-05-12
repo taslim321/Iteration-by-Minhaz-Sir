@@ -1,4 +1,6 @@
 #include <iostream>
+#include<vector>
+#include<typeinfo>
 using namespace std;
 
 struct Purchase{
@@ -9,6 +11,7 @@ struct Purchase{
 int main()
 {
     Purchase purchase;
+    cout<<typeid(Purchase).name()<<endl;
     cout << "Enter invoice number between 1000 - 8000 : ";
     cin >> purchase.invoice_num;
     while(purchase.invoice_num < 1000 || purchase.invoice_num > 8000){
